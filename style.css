@@ -1,0 +1,392 @@
+*{
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+    padding-top: 5px;
+}
+.half-width{
+    width: 50%;
+}
+.header{
+    background-color: #FFF8F3;
+    background-image: url(images/header_bg.png), url(images/developer.png);
+    background-repeat: no-repeat;
+    background-position: bottom right, left;
+    background-size: 50%, 6%;
+    height: 650px, 200px;
+}
+.nav-title{
+    font-size: 45px;
+    font-weight: 800;
+}
+.text-primary{
+    color: #FD6E0A;
+}
+.half-width img{
+    width: 100%;
+    margin-left: 100px;
+    height: 100%;
+    margin-top: 67px;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 200px 50px;
+}
+nav li{
+    list-style: none;
+    margin-left: 50px;
+}
+nav ul{
+    display: flex;
+    align-items: center;
+}
+.btn-primary{
+    font-size: 20px;
+    font-weight: 700;
+    color:white;
+    height: 64px;
+    border-radius: 5px;
+    background: #FD6E0A;
+    border: none;
+    padding: 18px 35px;
+}
+
+.banner{
+    display: flex;
+    margin: 0 200px;
+    align-items: flex-start;
+}
+.banner-title{
+    font-size: 75px;
+    font-weight: 700;
+}
+.banner-subtitle{
+    font-size: 45px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+.banner-description{
+    font-size: 18px;
+    font-weight: 400;
+    color: #757575;
+    margin-bottom: 30px;
+}
+.about{
+    margin: 110px 250px;
+    width: 750px;
+    height: 210px;
+    background-color: #FFF8F3;
+    padding: 100px 0;
+}
+.section-title{
+    text-align: center;
+}
+.section-para{
+    padding: 20px 120px;
+}
+.about-info{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 135px;
+    text-align: center;
+}
+.about-p1{
+    justify-content: center;
+}
+.about-second{
+    width: 50%;
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 50px;
+}
+.section-title-second{
+    padding-top: 20px;
+}
+
+/* what i do */
+.partition{
+    margin: 0 250px;
+    width: 750px;
+    height: 210px;
+    display: flex;
+    gap: 24px;
+}
+.sizing{
+    width: 25%;
+    height: 300px;
+    border-radius: 5px;
+    background: #FFF;
+    box-shadow: 0px 6px 50px 0px rgba(0, 0, 0, 0.06);
+}
+.sizing img{
+    height: 44px;
+    width: 44px;
+    padding: 0 15px;
+    padding-top: 13px;
+}
+.para{
+    color: #757575;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    padding: 13px 15px;
+}
+.description h3{
+    padding: 0 15px;
+    padding-top: 13px;
+    font-size: 15px;
+}
+.summary h1{
+    text-align: center;
+    padding-top: 180px;
+    padding-bottom: 80px;
+}
+.summary{
+    margin: 0 250px;
+}
+.resume{
+    display: flex;
+    gap: 20px;
+}
+.top{
+    color: #474747;
+}
+.part1{
+    color: #474747;
+    padding-bottom: 8px;
+    padding-top: 15px;
+}
+.part2{
+    color:  #757575;
+    font-weight: 600;
+}
+.part3{
+    padding: 13px 0;
+    color:  #757575;
+}
+.slice{
+    border-bottom: 2px solid #D1D1D1;
+}
+.scbtn button{
+    margin-left: 36%;
+    margin-top: 6%;
+    margin-bottom: 10%;
+}
+footer{
+    display: flex;
+    padding-top: 100px;
+    background-color: #FFF8F3;
+    padding-left: 250px;
+    padding-right: 250px;
+    padding-bottom: 100px;
+}
+.left{
+    width: 49%;
+    padding-right: 30px;
+}
+.last-title{
+   color: #181818;
+   font-weight: 700;
+}
+.last-para{
+    padding: 20px 0;
+    color: #474747;
+    font-weight: 400;
+}
+.img{
+    width: 24px;
+    height: 24px;
+    padding-right: 14px;
+}
+.right input, textarea{
+    margin-bottom: 14px;
+    border: none;
+    width: 100%;
+    padding: 12px 18px;
+}
+#lasti{
+    padding-bottom: 20px;
+}
+input{
+    height: 30px;
+}
+
+@media screen and (max-width:576px) {
+    .about-second{
+        width: 100%;
+        margin-top: 50px;
+    }
+    .about-info{
+        flex-direction: column;
+        padding: 0;
+        padding-bottom: 50px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .about{
+        padding: 0;
+        margin: 0;
+        width: 100%;
+        height: 100%;
+    }
+    .section-para{
+        padding: 5px;
+        text-align: center;
+    }
+    .partition{
+        flex-direction: column;
+        margin: 0;
+        width: 100%;
+    }
+    .sizing{
+        margin: 0 1%;
+        width: 98%;
+    }
+    .summary{
+        margin: 400px 0;
+        margin-bottom: 0;
+        margin-top: 500px;
+    }
+    .resume{
+        flex-direction: column;
+        padding-left: 5px;
+    }
+    footer{
+        flex-direction: column;
+        padding: 0;
+    }
+    .left{
+        text-align: center;
+        padding-left: 100px;
+    }
+    .right{
+        padding: 15px;
+        width: 83%;
+        padding-right: 30px;
+    }
+    #lasti{
+        text-align: center;
+    }
+    .scbtn button{
+        margin: 40px 24%;
+    }
+    .para{
+        word-wrap: wrap;
+    }
+    .left{
+        padding: 0;
+        margin: 0;
+        width: 100%;
+    }
+    .banner, nav, nav ul{
+        margin: 0;
+        flex-direction: column;
+        gap: 20px;
+        padding-left: 20px;
+        margin-bottom: 30px;
+    }
+    .header{
+        background-image: none;
+    }
+    .half-width{
+        width: 100%;
+    }
+    .half-width img{
+        margin: 0;
+        width: 90%;
+    }
+    .summary h1{
+        padding-bottom: 20px;
+        margin-top: 40px;
+    }
+}
+
+@media screen and (min-width:577px) and (max-width:992px) {
+    .about-second{
+        width: 100%;
+        margin-top: 50px;
+    }
+    .about-info{
+        flex-direction: column;
+        padding: 0;
+        padding-bottom: 50px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .about{
+        padding: 0;
+        margin: 0;
+        width: 100%;
+        height: 100%;
+    }
+    .section-para{
+        padding: 5px;
+        text-align: center;
+    }
+    .partition{
+        flex-direction: column;
+        margin: 0;
+        width: 100%;
+    }
+    .sizing{
+        width: 98%;
+        margin: 0 1%;
+    }
+    .summary{
+        margin: 400px 0;
+        margin-bottom: 0;
+        margin-top: 500px;
+    }
+    .resume{
+        flex-direction: column;
+        padding-left: 5px;
+    }
+    footer{
+        flex-direction: column;
+        padding: 0;
+    }
+    .left{
+        text-align: center;
+        padding-left: 100px;
+    }
+    .right{
+        padding: 15px;
+        width: 83%;
+        padding-right: 30px;
+    }
+    #lasti{
+        text-align: center;
+    }
+    .scbtn button{
+        margin: 40px 37%;
+    }
+    .para{
+        word-wrap: wrap;
+    }
+    .left{
+        padding: 0;
+        margin: 0;
+        width: 100%;
+    }
+    .banner, nav, nav ul{
+        margin: 0;
+        flex-direction: column;
+        gap: 20px;
+        padding-left: 20px;
+        margin-bottom: 30px;
+    }
+    .header{
+        background-image: none;
+    }
+    .half-width{
+        width: 100%;
+    }
+    .half-width img{
+        margin: 0;
+        width: 90%;
+    }
+    .summary h1{
+        padding-bottom: 30px;
+        padding-top: 100px;
+    }
+}
